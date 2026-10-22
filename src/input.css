@@ -1,0 +1,20 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body { font-family: 'Hiragino Kaku Gothic ProN', 'Hiragino Sans', sans-serif; background: #f0f9ff; }
+.btn-answer { transition: all 0.15s ease; }
+.btn-answer:active { transform: scale(0.97); }
+.fade-in { animation: fadeIn 0.3s ease; }
+@keyframes fadeIn { from { opacity: 0; transform: translateY(8px); } to { opacity: 1; transform: translateY(0); } }
+.progress-bar { transition: width 0.4s ease; }
+.tab-on      { background: #d1fae5; color: #065f46; border: 2px solid #6ee7b7; font-weight: 700; }
+.tab-calf-on { background: #bae6fd; color: #0369a1; border: 2px solid #38bdf8; font-weight: 700; }
+.tab-off     { background: white;   color: #6b7280; border: 2px solid #e5e7eb; font-weight: 600; }
+.sex-male-on   { background: #bfdbfe; color: #1d4ed8; border: 2px solid #93c5fd; font-weight: 700; }
+.sex-female-on { background: #fecdd3; color: #be123c; border: 2px solid #fda4af; font-weight: 700; }
+.sex-off       { background: white;   color: #6b7280; border: 2px solid #e5e7eb; font-weight: 600; }
+@media print {
+  .no-print { display: none !important; }
+  body { background: white; }
+}
